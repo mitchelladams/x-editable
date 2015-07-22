@@ -4890,7 +4890,7 @@ Editableform based on Twitter Bootstrap 2
 		this.element = $(element);
 		this.isInline = false;
 		this.isInput = this.element.is('input');
-		this.component = this.element.is('.date') ? this.element.find('input-group-addon, .btn') : false;
+		this.component = this.element.is('.date') ? this.element.find('.add-on, .btn') : false;
 		this.hasInput = this.component && this.element.find('input').length;
 		if(this.component && this.component.length === 0)
 			this.component = false;
@@ -6039,9 +6039,9 @@ Editableform based on Twitter Bootstrap 2
 		},
 		headTemplate: '<thead>'+
 							'<tr>'+
-								'<th class="prev"><i class="icon-arrow-left"/></th>'+
+								'<th class="prev"><i class="fa fa-arrow-left"/></th>'+
 								'<th colspan="5" class="datepicker-switch"></th>'+
-								'<th class="next"><i class="icon-arrow-right"/></th>'+
+								'<th class="next"><i class="fa fa-arrow-right"/></th>'+
 							'</tr>'+
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
@@ -6397,8 +6397,7 @@ Automatically shown in inline mode.
         /**
         @property tpl 
         **/         
-        //tpl:'<div class="input-append date"><input type="text"/><span class="add-on"><i class="icon-th"></i></span></div>',
-		tpl:'<div class="input-group date"><input type="text" class="form-control"/><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>',
+        tpl:'<div class="input-group date"><input type="text" class="form-control"/><div class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button></div></div>',
         /**
         @property inputclass 
         @default 'input-small'

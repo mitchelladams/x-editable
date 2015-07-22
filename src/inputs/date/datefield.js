@@ -60,8 +60,7 @@ Automatically shown in inline mode.
         /**
         @property tpl 
         **/         
-        //tpl:'<div class="input-append date"><input type="text"/><span class="add-on"><i class="icon-th"></i></span></div>',
-		tpl:'<div class="input-group date"><input type="text" class="form-control"/><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span></div>',
+        tpl:'<div class="input-group date"><input type="text" class="form-control"/><div class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button></div></div>',
         /**
         @property inputclass 
         @default 'input-small'
